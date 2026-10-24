@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CONSOLE</title>
+    </head>
+    <script>
+const numbers = [10, 20, 30, 40, 50];
+
+console.log(numbers);
+console.log(numbers.length);
+
+const fruits = ["Apple", "Mango", "Banana"];
+
+console.log(fruits[0]);
+console.log(fruits[2]);
+console.log(fruits.length);
+const fruit = ["Apple", "Banana"];
+
+fruits.push("Mango");
+
+console.log(fruit);
+console.log(fruit.length);
+function sayHello() {
+    console.log("Hello World");
+}
+
+sayHello();
+function addNumbers(num1, num2) {
+    console.log(num1 + num2);
+}
+
+addNumbers(10, 20);
+function square(number) {
+    return number * number;
+}
+
+console.log(square(5));
+function checkEvenOdd(number) {
+    if (number % 2 === 0) {
+        console.log("Even");
+    } else {
+        console.log("Odd");
+    }
+}
+
+checkEvenOdd(6);
+function findLargest(num1, num2) {
+    if (num1 > num2) {
+        console.log(num1);
+    } else {
+        console.log(num2);
+    }
+}
+
+
+findLargest(10, 20);
+function welcome(name) {
+    console.log("Welcome " + name);
+}
+
+welcome("Ali");
+
+const student = {
+    name: "Ali",
+    age: 18,
+    class: "12th"
+};
+
+console.log(student.name);
+console.log(student.age);
+console.log(student.class);
+const car = {
+    brand: "Toyota",
+    model: "Corolla",
+    color: "Black"
+};
+
+console.log(car.brand);
+
+const students = {
+    name: "Ali",
+    age: 18,
+    class: "12th"
+};
+
+students.age = 20;
+
+console.log(students.age);
+
+function sumArray(numbers) {
+    let sum = 0;
+
+    for (let i = 0; i < numbers.length; i++) {
+        sum = sum + numbers[i];
+    }
+
+    return sum;
+}
+
+console.log(sumArray([10, 20, 30, 40, 50]));
+
+const studentss = {
+    name: "Ali",
+    marks: 85
+};
+
+function printStudent(studentss) {
+    console.log(studentss.name);
+    console.log(studentss.marks);
+}
+
+printStudent(studentss);
+</script>
+<body>
+        <h1>FOR CONSOLE</h1>
+    </body>
+</html>

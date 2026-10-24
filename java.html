@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>java</title>
+    </head>
+    <style>
+         body{
+              margin: 0px;
+            padding: 0px;
+            background-color: whitesmoke;
+        }
+        
+          #header{
+            height: 100px;
+            width: 100%;
+            padding: 10px 10px;
+            border-width:0px 0px 2px 0px ;
+            background-color: snow;
+            color: rgb(60, 134, 156);
+            border-style: double;
+            display: inline-flex;
+            align-items: center;
+            justify-content:space-between;
+            border-bottom: 10px solid rgb(60, 134, 156);
+            border-radius: 0%;
+        }
+
+        .logo{
+
+            width: 30%;
+            display: flex;
+            align-items:start;
+        }
+
+        .logo img{
+
+            height: 100px;
+            width: 100px;
+            
+        }
+
+        .h1 {
+            margin-top: 5px;
+            color: rgb(60, 134, 156);
+            font-size: 25px;
+            text-align: center;
+            padding-right: 30%;
+            width: 50%;
+             text-shadow: 2px 2px 4px white;
+        }
+
+        .line {
+            margin-top: 0%;
+            color: black;
+            font-size: 25px;
+            text-align: center;
+        } 
+        .question{
+            margin-top: 0%;
+            color: black;
+            font-size: 20px;
+            text-align: left;
+        }
+
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            width: 100px;
+            height: 60px;
+            padding: 10px 10px;
+            margin: auto;
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: 600;
+            color: rgb(60, 134, 156) ;
+            background-color: rgb(60, 134, 156) ;
+            
+        }
+        .btn:hover {
+                background-color: black !important; 
+                 
+             }
+               a:hover {
+                    color: rgb(21, 172, 177) !important;
+                }
+
+               a:visited {
+                  color: black;
+                }
+                
+                a:active {
+                    color: blue !important;
+                }
+    </style>
+     <body>
+        <div id="header">
+        <div class="logo">
+            <img
+                src="https://img.magnific.com/premium-vector/letter-w-beauty-flower-logo-with-creative-concept-company-business-decorative-flower-beauty-spa-premium-vector-template_754537-5440.jpg?semt=ais_hybrid&w=740&q=80" 
+                alt="wajiha logo">
+        </div>    
+         <div class="h1">
+        <h1>JAVA SCRIPT TEST</h1>
+    </div>
+
+    </div>
+
+    <div class="line">
+        <p>java script questions answer.</p>
+    </div>
+        </div>
+        <div class="question">
+<h1>ARRAY</h1>
+<pre>
+Question1:Array: Create an array of five numbers and print all elements.
+Ans:
+const numbers = [10, 20, 30, 40, 50];
+
+console.log(numbers);
+console.log(numbers.length);
+
+</pre>
+<pre>
+Question2:Array: Create an array of three fruits and print the first and last elements.
+Ans:
+const fruits = ["Apple", "Mango", "Banana"];
+
+console.log(fruits[0]);
+console.log(fruits[2]);
+console.log(fruits.length);
+</pre>
+<pre>
+Question3:Array: Add "Mango" to the end of an array using push().
+Ans:
+const fruit = ["Apple", "Banana"];
+
+fruits.push("Mango");
+
+console.log(fruit);
+console.log(fruit.length);
+</pre>
+<pre>
+Question4:let numbers = [10, 20, 30, 40, 50];
+Function: Write a function that prints "Hello World".
+Ans:
+sayHello();
+function addNumbers(num1, num2) {
+    console.log(num1 + num2);
+}
+</pre>
+<pre>
+Question5:Function: Write a function that takes two numbers as parameters and prints their sum.
+Ans:
+function addNumbers(num1, num2) {
+    console.log(num1 + num2);
+}
+
+addNumbers(10, 20);
+</pre>
+<pre>
+Question6:Function: Write a function that takes a number and returns its square.
+Ans:
+function square(number) {
+    return number * number;
+}
+
+console.log(square(5));
+</pre>
+<pre>
+Question7:Function: Write a function that checks whether a number is even or odd.
+Ans:function checkEvenOdd(number) {
+    if (number % 2 === 0) {
+        console.log("Even");
+    } else {
+        console.log("Odd");
+    }
+}
+
+checkEvenOdd(6);
+</pre>
+<pre>
+Question8:Basic Function: Write a function to find the largest of two numbers.
+Ams:function findLargest(num1, num2) {
+    if (num1 > num2) {
+        console.log(num1);
+    } else {
+        console.log(num2);
+    }
+}
+
+findLargest(10, 20);
+</pre>
+<pre>
+Question9:Basic Function: Write a function that takes a name as an argument and prints a welcome message.
+Ans:
+function welcome(name) {
+    console.log("Welcome " + name);
+}
+
+welcome("Ali");
+</pre>
+<pre>
+Question10:Object: Create a student object with name, age, and class properties. Print all three properties.
+Ans:
+const student = {
+    name: "Ali",
+    age: 18,
+    class: "12th"
+};
+
+console.log(student.name);
+console.log(student.age);
+console.log(student.class);
+</pre>
+<pre>
+Question11:Object: Create a car object with brand, model, and color properties. Print the car's brand.
+Ans:const car = {
+    brand: "Toyota",
+    model: "Corolla",
+    color: "Black"
+};
+
+console.log(car.brand);
+</pre>
+<pre>
+Question12:Object: Update the age of the following student object to 20 and print it.
+Ans:
+const student = {
+    name: "Ali",
+    age: 18,
+    class: "12th"
+};
+
+student.age = 20;
+
+console.log(student.age);
+</pre>
+<pre>
+Question13:let student = {
+  name: "Ali",
+  age: 18
+};
+Array and Function: Write a function that takes an array of numbers and returns the sum of all elements.
+Ans:
+function sumArray(numbers) {
+    let sum = 0;
+
+    for (let i = 0; i < numbers.length; i++) {
+        sum = sum + numbers[i];
+    }
+
+    return sum;
+}
+
+console.log(sumArray([10, 20, 30, 40, 50]));
+</pre>
+<pre>
+Question14:Array, Function, and Object: Create an object for a student with name and marks properties.
+Write a function that prints the student's name and marks.
+Ans:
+const student = {
+    name: "Ali",
+    marks: 85
+};
+
+function printStudent(student) {
+    console.log(student.name);
+    console.log(student.marks);
+}
+
+printStudent(student);
+</pre>
+ </div>
+<div class="btn">
+    <a href="javaonly.html"> For console</a>
+</div>
+
+        </body>
+</html>
