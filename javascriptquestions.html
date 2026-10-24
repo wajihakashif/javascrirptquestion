@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TEST</title>
+    
+    </head>
+    <style>
+        body{
+              margin: 0px;
+            padding: 0px;
+            background-color: whitesmoke;
+        }
+        
+          #header{
+            height: 100px;
+            width: 100%;
+            padding: 10px 10px;
+            border-width:0px 0px 2px 0px ;
+            background-color: snow;
+            color: rgb(60, 134, 156);
+            border-style: double;
+            display: inline-flex;
+            align-items: center;
+            justify-content:space-between;
+            border-bottom: 10px solid rgb(60, 134, 156);
+            border-radius: 0%;
+        }
+
+        .logo{
+
+            width: 30%;
+            display: flex;
+            align-items:start;
+        }
+
+        .logo img{
+
+            height: 100px;
+            width: 100px;
+            
+        }
+
+        .h1 {
+            margin-top: 5px;
+            color: rgb(60, 134, 156);
+            font-size: 25px;
+            text-align: center;
+            padding-right: 30%;
+            width: 50%;
+             text-shadow: 2px 2px 4px white;
+        }
+
+        .line {
+            margin-top: 0%;
+            color: black;
+            font-size: 25px;
+            text-align: center;
+        } 
+        .question{
+            margin-top: 0%;
+            color: black;
+            font-size: 20px;
+            text-align: left;
+        }
+
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            width: 100px;
+            height: 60px;
+            padding: 10px 10px;
+            margin: auto;
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: 600;
+            color: rgb(60, 134, 156) ;
+            background-color: rgb(60, 134, 156) ;
+            
+        }
+        .btn:hover {
+                background-color: black !important; 
+                 
+             }
+               a:hover {
+                    color: rgb(21, 172, 177) !important;
+                }
+
+               a:visited {
+                  color: black;
+                }
+                
+                a:active {
+                    color: blue !important;
+                }
+    </style>
+    <body>
+        <div id="header">
+        <div class="logo">
+            <img
+                src="https://img.magnific.com/premium-vector/letter-w-beauty-flower-logo-with-creative-concept-company-business-decorative-flower-beauty-spa-premium-vector-template_754537-5440.jpg?semt=ais_hybrid&w=740&q=80" 
+                alt="wajiha logo">
+        </div>    
+         <div class="h1">
+        <h1>JAVA SCRIPT TEST</h1>
+    </div>
+
+    </div>
+
+    <div class="line">
+        <p>java script questions answer.</p>
+    </div>
+        </div>
+        <div class="question">
+            <h1>**Topic:** Variables, Arithmetic Operators, and Conditional Statements</h1>
+<pre>Question 1: First and Last Name Create two variables: `firstName` and `lastName.
+Store your first and last name in them and print your full name.
+</pre>
+<pre>ANS: 
+        let firstName = "wajiha";
+         let lastName = "kashif";
+        console.log(firstName + " " + lastName);                                    
+</pre> 
+   <pre>Question 2: Arithmetic Operations
+Create three variables: `num1`, `num2`, and `num3`.
+ Perform the following operations using all three values:
+- Addition
+- Subtraction
+- Multiplication
+- Division
+
+Display the result of each operation.
+</pre>
+<pre>ANS:
+        let num1 = 10;
+        let num2 = 5;
+        let num3 = 2;
+console.log(num1 + num2 + num3);
+console.log(num1 - num2 - num3);
+console.log(num1 * num2 * num3);
+console.log(num1 / num2 / num3);
+OUTPUT:
+17
+3
+100
+1
+</pre>
+<pre>Question 3: Temperature Checker
+Take the temperature from the user.
+- If the temperature is 0°C or below, print `"Freezing"`.
+- Otherwise, print `"Not freezing"`.
+</pre>
+<pre>ANS:
+    let temperature = -5;
+if (temperature <= 0) {
+    console.log("Freezing");
+} else {
+    console.log("Not freezing")
+}
+</pre>
+<pre>Question 4: Age Category
+Take the user's age and display the appropriate category:
+- 0–12: Child
+- 13–19: Teenager
+- 20–59: Adult
+- 60 and above: Senior Citizen
+</pre>
+<pre>ANS:
+let age = 56;
+
+if (age >= 0 && age <= 12) {
+    console.log("Child");
+} else if (age >= 13 && age <= 19) {
+    console.log("Teenager");
+} else if (age >= 20 && age <= 59) {
+    console.log("Adult");
+} else if (age >= 60) {
+    console.log("Senior Citizen");
+} else {
+    console.log("Invalid age");
+}
+</pre>
+
+
+
+<pre>Question 5: Electricity Bill Calculator<
+Take the number of electricity units consumed and calculate the bill using these rates:
+- First 100 units: Rs. 10 per unit
+- Next 100 units: Rs. 15 per unit
+- Above 200 units: Rs. 20 per unit
+
+Calculate the bill using cumulative rates.
+For example, the first 100 units are charged at Rs. 10 each,
+and only the units above 100 are charged at the next rate.</pre>
+<pre>ANS:
+let units = 150;
+let bill;
+
+if (units < 0) {
+    console.log("Invalid units");
+} else if (units <= 100) {
+    bill = units * 10;
+    console.log("Electricity bill: Rs. " + bill);
+} else if (units <= 200) {
+    bill = (100 * 10) + ((units - 100) * 15);
+    console.log("Electricity bill: Rs. " + bill);
+} else {
+    bill = (100 * 10) + (100 * 15) + ((units - 200) * 20);
+    console.log("Electricity bill: Rs. " + bill);
+}
+</pre>
+<pre>Question 6: Traffic Light
+Take a traffic light color as input.
+- Red: "Stop"
+- Yellow: "Ready"
+- Green: "Go"
+- Any other color: "Invalid Color"
+</pre>
+
+<pre>ANS:
+let color = Yellow;
+if (color === "Red") {
+    console.log("Stop");
+} else if (color === "Yellow") {
+    console.log("Ready");
+} else if (color === "Green") {
+    console.log("Go");
+} else {
+    console.log("Invalid Color");
+}</pre>
+
+<pre>Question 7: Pocket Money Checker
+Take the amount of pocket money.
+- If it is greater than Rs. 500, print `"You can buy a gift"`.
+- Otherwise, print `"Save your money"`.
+</pre>
+<pre>ANS:
+let money = 400;
+
+if (money > 500) {
+    console.log("You can buy a gift");
+} else {
+    console.log("Save your money");
+}
+</pre>
+<pre>Question 8: Free Delivery Checker
+Take the total shopping amount.
+- If it is Rs. 2,000 or more, print `"Free Delivery"`.
+- Otherwise, print `"Delivery Charges Apply"`.</pre>
+<pre>ANS:
+    let amount = Number(prompt("Enter total shopping amount:"));
+
+if (amount >= 2000) {
+    console.log("Free Delivery");
+} else {
+    console.log("Delivery Charges Apply");
+}
+</pre>
+        </div>
+<div class="btn">
+    <a href="onlyjava.html"> For console</a>
+</div>
+
+    </body>
+</html>

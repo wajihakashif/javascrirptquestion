@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>only java</title>
+    </head>
+    <script>
+       // Quetion 1 //
+        let firstName = "wajiha";
+         let lastName = "kashif";
+        console.log(firstName + " " + lastName); 
+        //Question 2//
+         let num1 = 10;
+        let num2 = 5;
+        let num3 = 2;
+console.log(num1 + num2 + num3);
+console.log(num1 - num2 - num3);
+console.log(num1 * num2 * num3);
+console.log(num1 / num2 / num3);
+ /*OUTPUT:
+17
+3
+100
+1*/
+//Question 3//
+let temperature = -5;
+if (temperature <= 0) {
+    console.log("Freezing");
+} else {
+    console.log("Not freezing")
+}
+//Question 4//
+let age = 56;
+
+if (age >= 0 && age <= 12) {
+    console.log("Child");
+} else if (age >= 13 && age <= 19) {
+    console.log("Teenager");
+} else if (age >= 20 && age <= 59) {
+    console.log("Adult");
+} else if (age >= 60) {
+    console.log("Senior Citizen");
+} else {
+    console.log("Invalid age");
+}
+//Question 5//
+let units = 150;
+let bill;
+
+if (units < 0) {
+    console.log("Invalid units");
+} else if (units <= 100) {
+    bill = units * 10;
+    console.log("Electricity bill: Rs. " + bill);
+} else if (units <= 200) {
+    bill = (100 * 10) + ((units - 100) * 15);
+    console.log("Electricity bill: Rs. " + bill);
+} else {
+    bill = (100 * 10) + (100 * 15) + ((units - 200) * 20);
+    console.log("Electricity bill: Rs. " + bill);
+}
+//Question 6//
+let color = "Red";
+
+if (color === "Red") {
+    console.log("Stop");
+} else if (color === "Yellow") {
+    console.log("Ready");
+} else if (color === "Green") {
+    console.log("Go");
+} else {
+    console.log("Invalid Color");
+}
+//Question 7//
+let money = 400;
+
+if (money >= 500) {
+    console.log("You can buy a gift");
+}
+ else {
+    console.log("Save your money");
+}
+//Question 8//
+ let amount = 2000;
+
+if (amount >= 2000) {
+    console.log("Free Delivery");
+} 
+else {
+    console.log("Delivery Charges Apply");
+}
+    </script>
+    <body>
+        <h1>FOR CONSOLE</h1>
+    </body>
+</html>
